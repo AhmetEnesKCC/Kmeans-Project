@@ -1,3 +1,4 @@
+from calendar import c
 from cgi import test
 import warnings
 from sklearn.cluster import KMeans
@@ -243,31 +244,16 @@ def norm_sharding(ds, k):
     return centroids
 
 
-def calculateMean(part):
-    mean = np.average(part, axis=0)
-    return mean
 
-
-def willMove(current_part, test_part, point, pointType):
-
-    move = False
-
-    if pointType == "top":
-        current_part = current_part[1:]
-
-    elif pointType == "bottom":
-        current_part = current_part[:-2]
-
-    current_distance = euc(point, calculateMean(current_part))
-    test_distance = euc(point, calculateMean(test_part))
-    if test_distance < current_distance:
-        move = True
-    return move
 
 
 def near_sharding(ds, k):
 
+
+
     n = np.shape(ds)[1]
+
+    m = np.shape(ds)[0]
 
     centroids = np.mat(np.zeros((k, n)))
 
@@ -281,46 +267,43 @@ def near_sharding(ds, k):
     # ds = ds[ds[:, 0].argsort()]
     ds.sort(axis=0)
 
-    ds_parts = np.array_split(ds[:, 1:], k)
+    breakPoints = np.zeros((k - 1), dtype=int)
 
-    partIndex = 0
+    partSize = int(math.floor(m / k))
 
-    while partIndex < k:
+    for i in range(k - 1):
+        breakPoints[i] = partSize * (i + 1)
+    
+    step = 0 
+    while step < k - 1:
+        
+        prev_point = 0
+        next_point = m - 1
+        break_point = breakPoints[step]
+        if step != 0:
+            prev_point = breakPoints[step - 1]
+        if step < k - 2:
+            next_point = breakPoints[step + 1]
+        
+        current_mean = np.sum(ds[prev_point:(break_point - 1), 1:], axis=0) / ((break_point - prev_point)) 
+        next_mean = np.sum(ds[break_point:next_point, 1:], axis=0) / ((next_point - break_point)) 
+        
+        current_distance = euc(current_mean, ds[break_point, 1:])
+        next_distance = euc(next_mean, ds[break_point, 1:])
+        if next_distance > current_distance:
+            breakPoints[step] = breakPoints[step] + 1
+            step = step + 1
+        else:
+            breakPoints[step] = breakPoints[step] - 1           
 
-        repeat = False
+    for j in range(k):
+        if j == 0:
+            centroids[j:] = np.sum(ds[0:breakPoints[0] - 1, 1:], axis=0) / breakPoints[j] - 1
+        elif j == k - 1: 
+            centroids[j:] = np.sum(ds[breakPoints[j - 1]:, 1:], axis=0) / (m - breakPoints[j - 1]) 
+        else:
+            centroids[j:] = np.sum(ds[breakPoints[j - 1]:breakPoints[j] - 1, 1:], axis=0) / (breakPoints[j] - breakPoints[j - 1] - 1) 
 
-        current_part = ds_parts[partIndex]
-        next_part = ""
-        prev_part = ""
-
-        if partIndex != 0:
-            prev_part = ds_parts[partIndex - 1]
-        if partIndex != k - 1:
-            next_part = ds_parts[partIndex + 1]
-
-        bottom_point = current_part[0]
-        top_point = current_part[-1]
-
-        if partIndex != 0 and willMove(
-            current_part,
-            prev_part,
-            bottom_point,
-            "bottom",
-        ):
-            ds_parts[partIndex - 1] = np.insert(prev_part, -1, bottom_point, axis=0)
-            ds_parts[partIndex] = np.delete(current_part, 0, axis=0)
-            repeat = True
-        if partIndex != k - 1 and willMove(current_part, next_part, top_point, "top"):
-            ds_parts[partIndex + 1] = np.insert(next_part, 0, top_point, axis=0)
-            ds_parts[partIndex] = np.delete(current_part, -1, axis=0)
-            repeat = True
-
-        if repeat == False:
-            partIndex = partIndex + 1
-
-    centroids = np.zeros([k, n])
-    for i in range(k):
-        centroids[i] = calculateMean(ds_parts[i])
     return centroids
 
 
@@ -408,8 +391,13 @@ def printResult(datas):
 iris_ds = iris.data
 
 
-df = pd.read_csv("./ruspini.csv")  # np arrayi
-df = df.to_numpy()
+# df = pd.read_csv("./near_sharding/ruspini.csv")  # np arrayi
+# df = df.to_numpy()
+
+df = wine.data
+df = df.astype(float)
+df = l_inf(df)
+
 
 
 def binary_method(ds, k):

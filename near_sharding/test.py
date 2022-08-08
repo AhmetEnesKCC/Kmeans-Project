@@ -1,12 +1,6 @@
 import numpy as np
 
-arr = np.array([[2, 3], [4, 5]])
+arr = np.array([[1, 2, 3], [4, 5 , 6], [7, 8, 9]])
 
-arr2 = arr[1]
-
-arr[1] = [7, 8]
-
-arr2 = [6, 7]
-
-
-print(arr)
+mean = np.sum(arr, axis = 0) / 3
+print(mean)
