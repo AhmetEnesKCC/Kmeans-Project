@@ -394,7 +394,7 @@ iris_ds = iris.data
 # df = pd.read_csv("./near_sharding/ruspini.csv")  # np arrayi
 # df = df.to_numpy()
 
-df = wine.data
+df = pd.read_csv('./ai2.csv',delimiter=" ").to_numpy()
 df = df.astype(float)
 df = l_inf(df)
 
@@ -421,7 +421,6 @@ def binary_method(ds, k):
 
 methods = [
     "random",
-    "minmax",
     "median",
     "mean",
     "naive",
@@ -435,7 +434,7 @@ repetition = 300
 for j in range(len(methods)):
     for i in range(repetition):
         values[j][0] = methods[j]
-        a = kmeans(df, 3, methods[j])
+        a = kmeans(df, 10, methods[j])
         values[j][1] += a["time"]
         values[j][2] += a["sse"]
         values[j][3] += a["total-time"]
