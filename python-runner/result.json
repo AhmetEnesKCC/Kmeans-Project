@@ -1,0 +1,631 @@
+[
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.017672718051580265,
+                0.005643266357264828
+            ],
+            "time": [
+                0.0004941170001984574,
+                0.0005003749989555218
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.017672718051580265,
+                "iter": 5.0,
+                "time": 0.0004941170001984574,
+                "total-time": 0.0044271249993471425,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "a1-k20.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 0.005643266357264828,
+                "iter": 6.0,
+                "time": 0.0005003749989555218,
+                "total-time": 0.004098198000574485,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "a1-k20.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "a1-k20"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.018588171350965955,
+                0.01101970309671555
+            ],
+            "time": [
+                0.0001399799986393191,
+                0.0001425580002251081
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.018588171350965955,
+                "iter": 4.0,
+                "time": 0.0001399799986393191,
+                "total-time": 0.002718870000098832,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "compound.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 0.01101970309671555,
+                "iter": 7.0,
+                "time": 0.0001425580002251081,
+                "total-time": 0.0028947660003905184,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "compound.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "compound"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.022494676290252986,
+                0.0033719357566643344
+            ],
+            "time": [
+                0.00011948400177061558,
+                0.00011831800104118884
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.022494676290252986,
+                "iter": 6.0,
+                "time": 0.00011948400177061558,
+                "total-time": 0.0023785920010413976,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "flame.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 0.0033719357566643344,
+                "iter": 7.0,
+                "time": 0.00011831800104118884,
+                "total-time": 0.0024227269992115907,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "flame.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "flame"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.022037709829667417,
+                0.05524609778401243
+            ],
+            "time": [
+                0.0001297300000442192,
+                0.0001310209999792278
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.022037709829667417,
+                "iter": 7.0,
+                "time": 0.0001297300000442192,
+                "total-time": 0.0029852839998784474,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "glass-k7.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 0.05524609778401243,
+                "iter": 4.0,
+                "time": 0.0001310209999792278,
+                "total-time": 0.0027351930009899663,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "glass-k7.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "glass-k7"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.023342844453153787,
+                0.0020550380751583035
+            ],
+            "time": [
+                9.98520033317618e-05,
+                9.792800090508536e-05
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.023342844453153787,
+                "iter": 7.0,
+                "time": 9.98520033317618e-05,
+                "total-time": 0.002497201001388021,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "iris5.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 0.0020550380751583035,
+                "iter": 6.0,
+                "time": 9.792800090508536e-05,
+                "total-time": 0.0022168819996295497,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "iris5.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "iris5"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.028589265330115562,
+                0.018483018254861473
+            ],
+            "time": [
+                0.0001355299970600754,
+                0.0001385020004818216
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.028589265330115562,
+                "iter": 16.0,
+                "time": 0.0001355299970600754,
+                "total-time": 0.003355942998023238,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "jain.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 0.018483018254861473,
+                "iter": 12.0,
+                "time": 0.0001385020004818216,
+                "total-time": 0.0031625370000256227,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "jain.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "jain"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.040250158082085104,
+                21.744638324866127
+            ],
+            "time": [
+                0.00012592500017490237,
+                0.00011889500136021525
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.040250158082085104,
+                "iter": 5.0,
+                "time": 0.00012592500017490237,
+                "total-time": 0.0029463810008019207,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "mk1.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 21.744638324866127,
+                "iter": 4.0,
+                "time": 0.00011889500136021525,
+                "total-time": 0.0024335920010344126,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "mk1.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "mk1"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.02827835749789642,
+                0.008113132941742991
+            ],
+            "time": [
+                0.00011652499961201102,
+                0.00011226800037547946
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.02827835749789642,
+                "iter": 10.0,
+                "time": 0.00011652499961201102,
+                "total-time": 0.0027442719996906817,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "pathbased.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 0.008113132941742991,
+                "iter": 7.0,
+                "time": 0.00011226800037547946,
+                "total-time": 0.002463163998618256,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "pathbased.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "pathbased"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.0709762265624372,
+                0.00115121076622626
+            ],
+            "time": [
+                7.718699926044792e-05,
+                7.51950018457137e-05
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.0709762265624372,
+                "iter": 2.0,
+                "time": 7.718699926044792e-05,
+                "total-time": 0.0017975279997335747,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "perfume_data-k20.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 0.00115121076622626,
+                "iter": 2.0,
+                "time": 7.51950018457137e-05,
+                "total-time": 0.0018282980017829686,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "perfume_data-k20.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "perfume data-k20"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.039118325252905616,
+                0.01402990338074295
+            ],
+            "time": [
+                0.00011403099837480113,
+                0.00011299800098640844
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.039118325252905616,
+                "iter": 13.0,
+                "time": 0.00011403099837480113,
+                "total-time": 0.002804888999380637,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "spiral.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 0.01402990338074295,
+                "iter": 21.0,
+                "time": 0.00011299800098640844,
+                "total-time": 0.0031696249995729884,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "spiral.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "spiral"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.27190263084673455,
+                0.2828493360161105
+            ],
+            "time": [
+                9.20509995194152e-05,
+                9.2098000459373e-05
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.27190263084673455,
+                "iter": 10.0,
+                "time": 9.20509995194152e-05,
+                "total-time": 0.002149164001166355,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "tae-k3.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 0.2828493360161105,
+                "iter": 4.0,
+                "time": 9.2098000459373e-05,
+                "total-time": 0.001929466999717988,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "tae-k3.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "tae-k3"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.06570491782840036,
+                272.24970108236806
+            ],
+            "time": [
+                0.0001255349998245947,
+                0.00012743100029183552
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.06570491782840036,
+                "iter": 6.0,
+                "time": 0.0001255349998245947,
+                "total-time": 0.002356748999154661,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "WUT_TwoSplashes.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 272.24970108236806,
+                "iter": 6.0,
+                "time": 0.00012743100029183552,
+                "total-time": 0.002433715000515804,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "WUT_TwoSplashes.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "WUT TwoSplashes"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.0318855565214284,
+                2.434838143955632
+            ],
+            "time": [
+                8.380699902772904e-05,
+                8.423200168181211e-05
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.0318855565214284,
+                "iter": 3.0,
+                "time": 8.380699902772904e-05,
+                "total-time": 0.0018225859993253836,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "WUT_X1.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 2.434838143955632,
+                "iter": 3.0,
+                "time": 8.423200168181211e-05,
+                "total-time": 0.0018088939983863384,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "WUT_X1.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "WUT X1"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.05504085085476415,
+                898.5205859238091
+            ],
+            "time": [
+                8.336299943039194e-05,
+                8.49410003866069e-05
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.05504085085476415,
+                "iter": 9.0,
+                "time": 8.336299943039194e-05,
+                "total-time": 0.002062512000557035,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "WUT_X2.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 898.5205859238091,
+                "iter": 5.0,
+                "time": 8.49410003866069e-05,
+                "total-time": 0.0019403970008715988,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "WUT_X2.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "WUT X2"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.08125230061049908,
+                12.89294103271445
+            ],
+            "time": [
+                9.2270998575259e-05,
+                9.547199908411131e-05
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.08125230061049908,
+                "iter": 12.0,
+                "time": 9.2270998575259e-05,
+                "total-time": 0.002219556000782177,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "WUT_X3.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 12.89294103271445,
+                "iter": 5.0,
+                "time": 9.547199908411131e-05,
+                "total-time": 0.001962965001293924,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "WUT_X3.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "WUT X3"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.168121903927922,
+                5.205522433083672e+30
+            ],
+            "time": [
+                9.442999958992005e-05,
+                9.825300017837435e-05
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.168121903927922,
+                "iter": 5.0,
+                "time": 9.442999958992005e-05,
+                "total-time": 0.001936993999115657,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "WUT_z1.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 5.205522433083672e+30,
+                "iter": 3.0,
+                "time": 9.825300017837435e-05,
+                "total-time": 0.0019219619999057613,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "WUT_z1.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "WUT z1"
+    },
+    {
+        "categories": [
+            "binary method-max norm",
+            "binary method-robust iqr norm"
+        ],
+        "series": {
+            "sse": [
+                0.19925477165581248,
+                2.72582144553783
+            ],
+            "time": [
+                0.00021790499886265025,
+                0.0002192179995472543
+            ]
+        },
+        "data": [
+            {
+                "sse": 0.19925477165581248,
+                "iter": 6.0,
+                "time": 0.00021790499886265025,
+                "total-time": 0.0033149930005311034,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "WUT_z3.csv",
+                "normalization_name": "max norm.py"
+            },
+            {
+                "sse": 2.72582144553783,
+                "iter": 25.0,
+                "time": 0.0002192179995472543,
+                "total-time": 0.005430079001234845,
+                "algorithm_name": "binary method.py",
+                "dataset_name": "WUT_z3.csv",
+                "normalization_name": "robust iqr norm.py"
+            }
+        ],
+        "labelWOExt": "WUT z3"
+    }
+]
